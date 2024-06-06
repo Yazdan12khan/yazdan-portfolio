@@ -1,3 +1,7 @@
+<?php
+include("./connection.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -533,6 +537,8 @@
                 text-align: center;
                 margin-top: 2rem;
             }
+
+           
         }
     </style>
 </head>
@@ -565,70 +571,61 @@
             <h3>and I'm a <span class="multipul-text"></span></h3>
             <p>Problem-solving skills are paramount as they troubleshoot bugs and enhance site performance.</p>
             <div class="social-media">
-                <a href="https://www.facebook.com/Malik.SalikSameer.35/" target="_blank"><i
-                        class="bx bxl-facebook"></i></a>
-                <a href="https://twitter.com/MalikSa99059951" target="_blank"><i class="bx bxl-twitter"></i></a>
-                <a href="https://www.instagram.com/professor.__.95/" target="_blank"><i
-                        class="bx bxl-instagram-alt"></i></a>
-                <a href=""><i class="bx bxl-linkedin" target="_blank"></i></a>
+                <a href="#" target="_blank"><i class="bx bxl-facebook"></i></a>
+                <a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.instagram.com/yazdan._.khan._.1/" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+                <a href="https://www.linkedin.com/in/muhammad-yazdan-699659308/"><i class="bx bxl-linkedin" target="_blank"></i></a>
             </div>
-            <!-- <a href="HUZAIFA.pdf" class="btn">Downlaod CV</a> -->
+           
         </div>
 
         <div class="home-img">
-            <img src="https://scontent.fkhi17-1.fna.fbcdn.net/v/t39.30808-6/399753431_1415035239429505_2438868482651047439_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFyl4t_JmDZ1ET4Peh5O8o6n0ZZyPvZc0efRlnI-9lzR52iXwiIR1Ctz-iKEHiby2mnv5ajcfSNXe4lYKVFMC1I&_nc_ohc=9Tg9dxt0CecAX-MJFa8&_nc_ht=scontent.fkhi17-1.fna&oh=00_AfAzU-126OlkRxXNsPDs96Er21qE3RRWASVOZyJc57laeQ&oe=65540BEA"
-                alt="">
+            <img src="https://scontent.fkhi17-1.fna.fbcdn.net/v/t39.30808-6/399753431_1415035239429505_2438868482651047439_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFyl4t_JmDZ1ET4Peh5O8o6n0ZZyPvZc0efRlnI-9lzR52iXwiIR1Ctz-iKEHiby2mnv5ajcfSNXe4lYKVFMC1I&_nc_ohc=9Tg9dxt0CecAX-MJFa8&_nc_ht=scontent.fkhi17-1.fna&oh=00_AfAzU-126OlkRxXNsPDs96Er21qE3RRWASVOZyJc57laeQ&oe=65540BEA" alt="">
         </div>
     </section>
     <!-- about section design -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="https://scontent.fkhi17-1.fna.fbcdn.net/v/t39.30808-6/399753431_1415035239429505_2438868482651047439_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFyl4t_JmDZ1ET4Peh5O8o6n0ZZyPvZc0efRlnI-9lzR52iXwiIR1Ctz-iKEHiby2mnv5ajcfSNXe4lYKVFMC1I&_nc_ohc=9Tg9dxt0CecAX-MJFa8&_nc_ht=scontent.fkhi17-1.fna&oh=00_AfAzU-126OlkRxXNsPDs96Er21qE3RRWASVOZyJc57laeQ&oe=65540BEA"
-                alt="">
+            <img src="https://scontent.fkhi17-1.fna.fbcdn.net/v/t39.30808-6/399753431_1415035239429505_2438868482651047439_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFyl4t_JmDZ1ET4Peh5O8o6n0ZZyPvZc0efRlnI-9lzR52iXwiIR1Ctz-iKEHiby2mnv5ajcfSNXe4lYKVFMC1I&_nc_ohc=9Tg9dxt0CecAX-MJFa8&_nc_ht=scontent.fkhi17-1.fna&oh=00_AfAzU-126OlkRxXNsPDs96Er21qE3RRWASVOZyJc57laeQ&oe=65540BEA" alt="">
         </div>
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
-            <h3> <span> Frontend</span> Developer</h3>
-            <p>As a matric student and budding web developer, I thrive on the blend of academic rigor and creative
-                exploration. Passionate about mastering the intricacies of coding languages, I navigate the digital
-                realm with curiosity and determination. With each line of code, I sculpt digital landscapes that mirror
-                my evolving skills and aspirations. Embracing the challenges of both academia and web development, I
-                sculpt my path toward a future where innovation and knowledge intersect harmoniously.
+            <h3> <span>Full stack</span> Developer</h3>
+            <p>As a First year student and budding web developer, A full stack developer is a versatile professional skilled in both front-end and back-end development. They handle the entire web development process, from designing and implementing user interfaces with technologies like HTML, CSS, and JavaScript, to managing server-side logic, databases, and application integration using languages such as Python, Ruby, Java, or Node.js and i am expert in Php and Laravel. This comprehensive expertise enables full stack developers to create fully functional and responsive web applications, seamlessly connecting the user experience with robust and efficient server-side operations. Their broad skill set makes them valuable assets in modern software development teams, capable of overseeing projects from conception to deployment.
             </p>
-            <a href="" class="btn">Read More</a>
+            <a href="https://en.wikipedia.org/wiki/Web_development" class="btn">Read More</a>
         </div>
     </section>
     <!-- services section design -->
     <section class="services" id="services">
-        <h2 class="heading">Our <span>Services</span></h2>
+        <h2 class="heading"> <span>Services</span></h2>
 
         <div class="services-container">
 
-            <div class="services-box">
-                <i class="bx bx-code-alt"></i>
-                <h3>Web Development</h3>
-                <p>Web developers craft the digital experiences we encounter daily, using languages like HTML, CSS, and
-                    JavaScript to create interactive and visually appealing websites.</p>
-                <a href="" class="btn">Read More</a>
-            </div>
+           
 
             <div class="services-box">
                 <i class="bx bxs-paint"></i>
-                <h3>Figma Designer</h3>
-                <p>Figma designers utilize a versatile digital platform to create seamless user interfaces and engaging
-                    user experiences for websites, applications, and digital products.
+                <h3>Front-end</h3>
+                <p>"Front-end development is the art of crafting intuitive and engaging user interfaces, transforming design concepts into interactive, responsive web applications using HTML, CSS, and JavaScript.
                 </p>
-                <a href="" class="btn">Read More</a>
+                <a href="https://en.wikipedia.org/wiki/Front-end_web_development" target="_blank" class="btn">Read More</a>
             </div>
+
+          
 
             <div class="services-box">
                 <i class="bx bx-bar-chart-alt"></i>
-                <h3>SEO Marketing</h3>
-                <p>Website SEO marketing is a strategic approach aimed at enhancing a website's ranking on search engine
-                    results pages to attract more organic traffic and potential customers.</p>
-                <a href="" class="btn">Read More</a>
+                <h3>Back-end</h3>
+                <p>Back-end development is the backbone of any application, handling databases, server logic, and integration of front-end technologies to create a seamless user experience.</p>
+                <a href="https://en.wikipedia.org/wiki/Back_end" target="_blank" class="btn">Read More</a>
             </div>
-
+            <div class="services-box">
+                <i class="bx bx-code-alt"></i>
+                <h3>Data Base</h3>
+                <p>A database is an organized collection of structured data typically stored electronically in a computer system. A database is usually controlled by a database management system. </p>
+                <a href="https://en.wikipedia.org/wiki/Database" target="_blank" class="btn">Read More</a>
+            </div>
         </div>
     </section>
     <!-- portfolio section design -->
@@ -643,8 +640,7 @@
                     <h4>Web-Designig</h4>
                     <p>
                         A dynamic website offering personalized financial management tools for small businesses.</p>
-                    <a href="https://github.com/yazdan135/cos-p-1.git" target="_blank"><i
-                            class="bx bx-link-external"></i></a>
+                    <a href="https://github.com/yazdan135/cos-p-1.git" target="_blank"><i class="bx bx-link-external"></i></a>
                 </div>
             </div>
 
@@ -653,8 +649,7 @@
                 <div class="portfolio-layer">
                     <h4>Web-Designig</h4>
                     <p>A dynamic website offering personalized financial management tools for small businesses.</p>
-                    <a href="https://github.com/yazdan135/gbc-p-3.git" target="_blank"><i
-                            class="bx bx-link-external"></i></a>
+                    <a href="https://github.com/yazdan135/prk-p-6.git" target="_blank"><i class="bx bx-link-external"></i></a>
                 </div>
             </div>
 
@@ -663,8 +658,7 @@
                 <div class="portfolio-layer">
                     <h4>Web-Designig</h4>
                     <p>A dynamic website offering personalized financial management tools for small businesses.</p>
-                    <a href="https://github.com/yazdan135/org-p-2.git" target="_blank"><i
-                            class="bx bx-link-external"></i></a>
+                    <a href="https://github.com/yazdan135/org-p-2.git" target="_blank"><i class="bx bx-link-external"></i></a>
                 </div>
             </div>
 
@@ -673,8 +667,7 @@
                 <div class="portfolio-layer">
                     <h4>Web-Designig</h4>
                     <p>A dynamic website offering personalized financial management tools for small businesses.</p>
-                    <a href="https://github.com/yazdan135/spt-p-5.git" target="_blank"><i
-                            class="bx bx-link-external"></i></a>
+                    <a href="https://github.com/yazdan135/spt-p-5.git" target="_blank"><i class="bx bx-link-external"></i></a>
                 </div>
             </div>
 
@@ -683,8 +676,7 @@
                 <div class="portfolio-layer">
                     <h4>Web-Designig</h4>
                     <p>A dynamic website offering personalized financial management tools for small businesses.</p>
-                    <a href="https://github.com/yazdan135/frz-p-10.git" target="_blank"><i
-                            class="bx bx-link-external"></i></a>
+                    <a href="https://github.com/yazdan135/frz-p-10.git" target="_blank"><i class="bx bx-link-external"></i></a>
                 </div>
             </div>
 
@@ -693,8 +685,7 @@
                 <div class="portfolio-layer">
                     <h4>Web-Designig</h4>
                     <p>A dynamic website offering personalized financial management tools for small businesses.</p>
-                    <a href="https://github.com/yazdan135/olc-p-11.git" target="_blank"><i
-                            class="bx bx-link-external"></i></a>
+                    <a href="https://github.com/yazdan135/olc-p-11.git" target="_blank"><i class="bx bx-link-external"></i></a>
                 </div>
             </div>
 
@@ -704,17 +695,19 @@
     <!-- contact section design -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-        <form action="#">
+        <form action="#" method="post">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" name="name" placeholder="Full Name">
+                <input type="email" name="email" placeholder="Email Address">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Number">
-                <input type="text" placeholder="Email Subject">
+                
+                <input type="password" name="password" placeholder="Enter Password">
+                <input type="number" name="number" placeholder="Number">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Massage"></textarea>
-            <input type="submit" value="send Massage" class="btn">
+
+            <input type="submit" name="submit" value="submit" class="btn" id="">
+        
         </form>
     </section>
     <!-- footer design -->
@@ -782,10 +775,18 @@
 
 
         });
-        ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-        ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom', });
-        ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-        ScrollReveal().reveal('.home-content p, .about-content p', { origin: 'bottom' });
+        ScrollReveal().reveal('.home-content, .heading', {
+            origin: 'top'
+        });
+        ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', {
+            origin: 'bottom',
+        });
+        ScrollReveal().reveal('.home-content h1, .about-img', {
+            origin: 'left'
+        });
+        ScrollReveal().reveal('.home-content p, .about-content p', {
+            origin: 'bottom'
+        });
         /*==================== typed js ====================*/
         const typed = new Typed('.multipul-text', {
             strings: ['Frontend Developer', 'Figma Desingner', 'SEO Marketing'],
@@ -798,3 +799,21 @@
 </body>
 
 </html>
+
+<?php
+
+if(isset($_POST['submit'])){
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $number = $_POST['number'];
+
+    $sql = "insert into login (name, email, password, number) values ('$name', '$email', '$password', '$number')";
+    $result = mysqli_query($conn, $sql);
+    if($result){
+        echo "<script>alert('Data Inserted');
+        window.location.href = './index.php' 
+        </script>";
+    }
+}
+?>
