@@ -1,6 +1,4 @@
-<?php
-include("./connection.php");
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -789,7 +787,7 @@ include("./connection.php");
         });
         /*==================== typed js ====================*/
         const typed = new Typed('.multipul-text', {
-            strings: ['Frontend Developer', 'Figma Desingner', 'SEO Marketing'],
+            strings: ['Full Stack Developer', 'Figma Desingner', 'DataBase Manager'],
             typeSpeed: 100,
             backSpeed: 100,
             backDelay: 1000,
@@ -800,20 +798,3 @@ include("./connection.php");
 
 </html>
 
-<?php
-
-if(isset($_POST['submit'])){
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $number = $_POST['number'];
-
-    $sql = "insert into login (name, email, password, number) values ('$name', '$email', '$password', '$number')";
-    $result = mysqli_query($conn, $sql);
-    if($result){
-        echo "<script>alert('Data Inserted');
-        window.location.href = './index.php' 
-        </script>";
-    }
-}
-?>
