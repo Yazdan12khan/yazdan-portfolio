@@ -4,296 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Timeline</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Saylani Welfare Clone</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* General Styles */
+        /* Add custom CSS here */
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
         }
 
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .section {
+            padding: 30px 0;
+        }
+
+        .cta-banner {
+            background: url('banner-image.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
             padding: 20px 0;
         }
 
-        .row {
-            display: flex;
-            gap: 20px;
+        .footer a {
+            color: #ddd;
         }
 
-        .col-lg-6 {
-            flex: 1;
+        .icon-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
         }
 
-        .resume {
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .resume-title {
-            font-size: 27px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .resume-item {
-            position: relative;
-            padding-left: 50px;
-            margin-bottom: 30px;
-        }
-
-        .resume-item h4 {
-            font-size: 18px;
-            font-weight: bold;
-            margin: 0;
-            color: #149DDD;
-        }
-
-        .resume-item h5 {
-            font-size: 14px;
-            margin: 5px 0;
-            color: #555;
-        }
-
-        .resume-item p {
-            font-size: 14px;
-            color: #555;
-        }
-
-        .resume-item ul {
-            margin: 10px 0 0 20px;
-            padding: 0;
-            list-style-type: disc;
-        }
-
-        .resume-item ul li {
-            font-size: 14px;
-            color: #555;
-            margin-bottom: 5px;
-        }
-
-        /* Timeline container */
-        .timeline {
-            position: relative;
-            padding-left: 30px;
-        }
-
-        /* Timeline dots */
-        .timeline-dot-1 {
-            position: absolute;
-            left: 10px;
-            width: 12px;
-            height: 12px;
-            background-color: transparent;
-            /* Transparent center */
-            border: 2px solid #149DDD;
-            /* Border color */
-            border-radius: 50%;
-            transform: translateY(-50%);
-            margin-top: 10.4px;
-        }
-
-        /* Timeline line segments */
-        .timeline-segment-1 {
-            position: absolute;
-            margin-top: 17px;
-            left: 17px;
-            width: 2px;
-            height: calc(80% + 20px);
-            /* Extends slightly below for connection */
-            background-color: #149DDD;
-        }
-
-        .timeline-dot-2 {
-            position: absolute;
-            left: 10px;
-            width: 12px;
-            height: 12px;
-            background-color: transparent;
-            /* Transparent center */
-            border: 2px solid #149DDD;
-            /* Border color */
-            border-radius: 50%;
-            transform: translateY(-50%);
-            margin-top: 10.4px;
-        }
-
-        /* Timeline line segments */
-        .timeline-segment-2 {
-            position: absolute;
-            margin-top: 17px;
-            left: 17px;
-            width: 2px;
-            height: calc(97% + 20px);
-            /* Extends slightly below for connection */
-            background-color: #149DDD;
-        }
-
-        .timeline-dot-3 {
-            position: absolute;
-            left: 10px;
-            width: 12px;
-            height: 12px;
-            background-color: transparent;
-            /* Transparent center */
-            border: 2px solid #149DDD;
-            /* Border color */
-            border-radius: 50%;
-            transform: translateY(-50%);
-            margin-top: -9px;
-        }
-
-        /* Timeline line segments */
-        .timeline-segment-3 {
-            position: absolute;
-            margin-top: -3px;
-            left: 17px;
-            width: 2px;
-            height: calc(127% + 20px);
-            /* Extends slightly below for connection */
-            background-color: #149DDD;
-        }
-
-        .timeline-dot-4 {
-            position: absolute;
-            left: 695px;
-            width: 12px;
-            height: 12px;
-            background-color: transparent;
-            /* Transparent center */
-            border: 2px solid #149DDD;
-            /* Border color */
-            border-radius: 50%;
-            transform: translateY(-50%);
-            margin-top: -9px;
-        }
-
-        /* Timeline line segments */
-        .timeline-segment-4 {
-            position: absolute;
-            margin-top: -3px;
-            left: 702px;
-            width: 2px;
-            height: calc(39% + 20px);
-            /* Extends slightly below for connection */
-            background-color: #149DDD;
-        }
-
-        .resume-item:first-child .timeline-segment {
-            top: 50%;
-            /* Start from the middle of the first dot */
-        }
-
-        .resume-item .timeline-segment:last-child {
-            height: 0;
-            /* End the line after the last dot */
+        .icon-card i {
+            font-size: 50px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 
 <body>
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
+    <!-- Header -->
+    <header class="bg-dark py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1><img src="https://saylaniwelfare.com/static/media/logo_saylaniwelfare.22bf709605809177256c.png"
+                    style="height: 80px;" alt=""></h1>
+            <nav>
+                <ul class="list-unstyled d-flex gap-4">
+                    <li><a style="text-decoration: none; color:white;" href="./test.html">Home</a></li>
+                    <li><a style="text-decoration: none; color:white;" href="#">About Us</a></li>
+                    <li><a style="text-decoration: none; color:white;" href="#">Projects</a></li>
+                    <li><a style="text-decoration: none; color:white;" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h2>Welcome to Saylani Welfare</h2>
+            <p>The largest NGO offering free Monthly Family Support in Pakistan</p>
+        </div>
+    </section>
+
+    <section>
         <div class="container">
             <div class="row">
-                <!-- Left Column -->
                 <div class="col-lg-6">
-                    <h3 class="resume-title">Summary</h3>
-                    <div class="timeline">
-                        <!-- First dot and line -->
-                        <div class="resume-item">
-                            <div class="timeline-dot-1"></div>
-                            <div class="timeline-segment-1"></div>
-                            <h4>Brandon Johnson</h4>
-                            <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing
-                                    and
-                                    developing user-centered digital/print marketing material from initial concept to
-                                    final,
-                                    polished deliverable.</em></p>
-                            <ul>
-                                <li>Portland par 127, Orlando, FL</li>
-                                <li>(123) 456-7891</li>
-                                <li>alice.barkley@example.com</li>
-                            </ul>
-                        </div>
-
-                        <h3 class="resume-title">Education</h3>
-
-                        <!-- Second dot and line -->
-                        <div class="resume-item">
-                            <div class="timeline-dot-2"></div>
-                            <div class="timeline-segment-2"></div>
-                            <h4>Master of Fine Arts &amp; Graphic Design</h4>
-                            <h5>2015 - 2016</h5>
-                            <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-                            <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero
-                                voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-                        </div>
-
-                        <!-- Third dot and line -->
-                        <div class="resume-item">
-                            <div class="timeline-dot-2"></div>
-                            <div class="timeline-segment-2"></div>
-                            <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-                            <h5>2010 - 2014</h5>
-                            <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-                            <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel
-                                ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae
-                                consequatur
-                                neque etlon sader mart dila</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Column -->
-                <div class="col-lg-6">
-                    <h3 class="resume-title">Professional Experience</h3>
-                    <div class="timeline-dot-4"></div>
-                    <div class="timeline-segment-4"></div>
-                    <div class="resume-item">
-                        <h4>Senior Graphic Design Specialist</h4>
-                        <h5>2019 - Present</h5>
-                        <p><em>Experion, New York, NY</em></p>
-                        <ul>
-                            <li>Lead in the design, development, and implementation of graphic, layout, and production
-                                communication materials.</li>
-                            <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of
-                                the project.</li>
-                            <li>Supervise the assessment of all graphic materials in order to ensure quality and
-                                accuracy of the design.</li>
-                            <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000.
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="resume-item">
-                        <h4>Graphic Design Specialist</h4>
-                        <div class="timeline-dot-3"></div>
-                        <div class="timeline-segment-3"></div>
-                        <h5>2017 - 2018</h5>
-                        <p><em>Stepping Stone Advertising, New York, NY</em></p>
-                        <ul>
-                            <li>Developed numerous marketing programs (logos, brochures, infographics, presentations,
-                                and advertisements).</li>
-                            <li>Managed up to 5 projects or tasks at a given time while under pressure.</li>
-                            <li>Recommended and consulted with clients on the most appropriate graphic design.</li>
-                            <li>Created 4+ design presentations and proposals a month for clients and account managers.
-                            </li>
-                        </ul>
-                    </div>
+                    <img src="" alt="">
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2025 Saylani Welfare. All rights reserved.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
