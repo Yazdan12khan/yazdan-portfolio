@@ -573,26 +573,32 @@
     <!-- home section design -->
 
     <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello it's me</h3>
-            <h1>Muhammad Yazdan</h1>
-            <h3>and I'm a <span class="multipul-text"></span></h3>
-            <p>I excel in problem solving, ensuring seamless functionality and delivering optimized user experiences
-                across diverse platforms.</p>
-            <div class="social-media">
-                <a href="https://www.instagram.com/yazdan_khann59/" target="_blank"><i
-                        class="bx bxl-instagram-alt"></i></a>
-                <a href="https://linkedin.com/in/muhammad-yazdan-699659308/" target="_blank"><i
-                        class="bx bxl-linkedin"></i></a>
-                <a href="https://github.com/Yazdan12khan" target="_blank"><i class="bx bxl-github"></i></a>
-                <a href="https://linktr.ee/yazdan_khan" target="_blank"><i class="fa-solid fa-user"></i></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="home-content">
+                        <h3>Hello it's me</h3>
+                        <h1>Muhammad Yazdan</h1>
+                        <h3>and I'm a <span class="multipul-text"></span></h3>
+                        <p>I excel in problem solving, ensuring seamless functionality and delivering optimized user
+                            experiences
+                            across diverse platforms.</p>
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/yazdan_khann59/" target="_blank"><i
+                                    class="bx bxl-instagram-alt"></i></a>
+                            <a href="https://linkedin.com/in/muhammad-yazdan-699659308/" target="_blank"><i
+                                    class="bx bxl-linkedin"></i></a>
+                            <a href="https://github.com/Yazdan12khan" target="_blank"><i class="bx bxl-github"></i></a>
+                            <a href="https://linktr.ee/yazdan_khan" target="_blank"><i class="fa-solid fa-user"></i></a>
+                        </div>
+                        <a href="./CV.pdf" class="btn" target="_blank">View CV</a>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-down-left" data-aos-duration="1500">
+                    <img src="./me.png"
+                        style="height: 400px; width: 380px; border: 10px solid #00EEFF; border-radius: 50%;" alt="">
+                </div>
             </div>
-            <a href="./CV.pdf" class="btn" target="_blank">View CV</a>
-        </div>
-
-        <div class="home-img">
-            <img src="https://scontent.fkhi17-1.fna.fbcdn.net/v/t39.30808-6/399753431_1415035239429505_2438868482651047439_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFyl4t_JmDZ1ET4Peh5O8o6n0ZZyPvZc0efRlnI-9lzR52iXwiIR1Ctz-iKEHiby2mnv5ajcfSNXe4lYKVFMC1I&_nc_ohc=9Tg9dxt0CecAX-MJFa8&_nc_ht=scontent.fkhi17-1.fna&oh=00_AfAzU-126OlkRxXNsPDs96Er21qE3RRWASVOZyJc57laeQ&oe=65540BEA"
-                alt="">
         </div>
     </section>
     <!-- about section design start -->
@@ -632,7 +638,7 @@
                 <p>Android and iOS development involve creating intuitive mobile apps tailored to each platform's
                     guidelines. By utilizing Dart/flutter, App developers build responsive,
                     applications that perform seamlessly across devices.</p>
-                <a href="#" class="btn">Coming Soon</a>
+                <a href="./aboutme.html" class="btn" target="_blank">Read More</a>
             </div>
 
             <div class="services-box">
@@ -820,17 +826,17 @@
         }
 
         .sql {
-            width: 0%;
+            width: 75%;
             animation: sql 8s forwards;
         }
 
         .php {
-            width: 0%;
+            width: 85%;
             animation: php 8s forwards;
         }
 
         .laravel {
-            width: 0%;
+            width: 87%;
             animation: laravel 8s forwards;
         }
 
@@ -886,7 +892,7 @@
             }
 
             to {
-                width: 0%;
+                width: 75%;
             }
         }
 
@@ -896,7 +902,7 @@
             }
 
             to {
-                width: 0%;
+                width: 85%;
             }
         }
 
@@ -906,7 +912,7 @@
             }
 
             to {
-                width: 0%;
+                width: 87%;
             }
         }
 
@@ -1167,7 +1173,7 @@
                         <h4>Senior Data Entry Specialist At YS Traders</h4>
                         <div class="timeline-dot-3"></div>
                         <div class="timeline-segment-3"></div>
-                        <h5>2025 - Present</h5>
+                        <h5>2023 - 2024</h5>
                         <p><em>Experion, Pakistan , Karachi</em></p>
                         <ul>
                             <li>Lead in the management, organization, and accurate entry of data into company databases
@@ -1283,19 +1289,83 @@
     <!-- contact section design start -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-        <form onsubmit="emailSend(); reset(); return false;">
+        <form id="contact-form">
             <div class="input-box">
-                <input type="text" name="name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" name="user_name" placeholder="Full Name" required>
+                <input type="email" name="user_email" placeholder="Email Address" required>
             </div>
             <div class="input-box">
                 <textarea name="message" rows="5" cols="30" placeholder="Enter your message" required></textarea>
             </div>
-
-            <input type="submit" name="submit" value="submit" class="btn" id="">
-
+            <input type="submit" value="Submit" class="btn">
         </form>
     </section>
+    <style>
+        /* Popup Styles */
+        .popup {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #28a745;
+            /* Green for success */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: none;
+            z-index: 9999;
+            font-size: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Red popup for error */
+        .popup.error {
+            background-color: #dc3545;
+            /* Red for error */
+        }
+    </style>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("cNPngIEBpA5XWzlz9"); // Replace with your EmailJS public key
+        })();
+
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            emailjs.sendForm("service_e2cvm1j", "template_3ng1rx4", this)
+                .then(function (response) {
+                    // Success - Show Green Popup
+                    showPopup("Message sent successfully!", "success");
+                }, function (error) {
+                    // Error - Show Red Popup
+                    showPopup("Failed to send message. Please try again.", "error");
+                });
+
+            // Reset the form
+            this.reset();
+        });
+
+        function showPopup(message, type) {
+            const popup = document.createElement("div");
+            popup.classList.add("popup");
+            if (type === "error") {
+                popup.classList.add("error");
+            }
+            popup.textContent = message;
+
+            // Append the popup to the body
+            document.body.appendChild(popup);
+
+            // Show the popup
+            popup.style.display = "block";
+
+            // Hide the popup after 3 seconds
+            setTimeout(function () {
+                popup.style.display = "none";
+                popup.remove(); // Remove the popup after hiding
+            }, 3000); // 3 seconds
+        }
+    </script>
     <!-- contact section design end -->
 
     <!-- footer design start -->
